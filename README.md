@@ -1,1 +1,97 @@
-"This includes some facts about me.  Please enjoy getting to know me a little bit better."
+<!DOCTYPE html>
+<head>
+	<link href="/assets/normalize.css" rel="stylesheet">
+<style>
+	header {
+		text-align: center;
+		color: #345;
+	}
+	body {
+		background: linear-gradient(to right, #d3d3d3, #ffb6c1);
+	}
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.summer {
+		border-radius: 25px;
+		border: 2px solid #d3d3d3;
+	}
+	h1 {
+		font-size: 75px;
+		font-family: "Papyrus", fantasy;
+		font-style: italic;
+	}
+	ul {
+		list-style: none;
+	}
+	div {
+		padding-top: 500px
+		bottom: 0px;
+		text-align: center;
+	}
+	input {
+		border: 5;
+		padding: 5px;
+		font-size: 14px;
+	}
+	input[type="submit"] {
+		background: red;
+		color: #A9A;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>All About Katie</h1>
+		<img src="/Users/KatherineUde/Desktop/GA - K.Ude/img_lake.jpg">
+	</header>
+
+
+<p>Hi!  My name is Katie and I was originally born in St. Louis, MO and lived there until I moved away to start college at <a href="http://www.northwestern.edu/">Northwestern University</a> in Evanston, IL during the Fall of 2004.  Somehow to this day I have never managed to move away from the city of Chicago despite having a severe abhorrence to the cold weather.  I also have managed to spend most of my post-college career working in the software industry despite adamantly telling my parents in high school that there was no way I would EVER have a job relating to math or engineering.  However, to balance that out, I do enjoy staying active and help others maintain a healthy lifestyle by teaching yoga & <a href="http://centeredonnorth.com/">Pilates</a>.</p>
+
+<p>I became interested in teaching as a result of dabbling in it while I was still in high school.  I used to dance and figure skate and one of my first jobs was teaching learn to skate classes at the <a href="http://www.webstergroves.org/index.aspx?nid=197">Webster Groves Ice Rink</a> in St. Louis.  Despite the challenges that come from trying to wrangle a class of toddlers on ice skates nonetheless, I feel in love with helping to teach people and share my love of the sport.  One of my skating coaches had me do yoga and Pilates as cross-training, and I've been practicing ever since, so it was a natural fit when it came to teaching.  Besides yoga and Pilates, I also enjoy dancing, swimming, and running (sometimes).</p>
+
+<p>Some of my other interests include reading, cooking and baking, and exploring both all Chicago has to offer as well as new places/cities.  I have always been a voracious reader and my favorites genres of literature are historical fiction and fantasy.  However, I do branch out and read other types of books, especially when it comes to my monthly book club selection.  I even have been known to crack open a cookbook from time to time although I feel Pinterest is turning them semi-obsolete.  While I am not a gourmet chef by any means, I have passable skills and I always enjoy trying out new ideas.  And if I ever end up with a Pinterest fail, I always have plenty of fantastic options for restaurants to head out to in our great city.</p></br></br>
+
+
+<center><img src="/Users/KatherineUde/Desktop/GA - K.Ude/IMG_Summer15.jpg" style="width: 20%; height: 20%" img class="summer"/></center></br></br>
+
+
+<p>I live in the <a href "http://oldtownchicago.org/">Old Town</a> neighborhood of Chicago, IL.  The land originally was a home and trade center for several Native American tribes such as the Potawatomi, the Miami, and the Illinois.  Unfortunately, after the ratification of the Treaty of Chicago in 1833, the majority of the indigenous population was removed via force, and by the 1850s German-Catholic immigrants were the new majority settlers.  Many of the buildings are older, Victorian-era buildings.  In fact my church, <a href="http://www.st-mikes.org/">St. Michael's</a> was originally a Bavarian-built church, and one of 7 to survive the path of the <a href="http://www.history.com/topics/great-chicago-fire">Great Chicago Fire.</a>  Coincidentally, the Chicago Fire started on the exact same day as my birthday, October 8th, but 114 years prior in 1871.
+</p>
+<p>
+Rather than aimlessly wondering the streets of my neighborhood, I can be found at the following address:
+</p>
+	<ul>
+		<l1><a href="https://www.google.com/maps">1555 N. Mohawk St.</a></l1>
+		<li>Apt. 3H</li>
+		<li>Chicago, IL 60610</li>
+	</ul>
+<p>
+Or if one needs to reach me via phone or text, please use (314) 303-4452.  If email is your preferred channel of communication, the best one to utilize is <a href="mailto:Katie.Ude@gmail.com">Katie.Ude@gmail.com.</a>  Last, if one prefers indirect communication via social media, please find the links at the bottom of the page.
+</p></br></br></br>
+	<p>Speaking of enjoying travel, I will be doing some this month so please drop me a line if you want to be updated on my adventures!</p>
+	<input type="email" placeholder="Your email">
+	<input type="submit">
+</br></br>
+
+
+	<div>
+		<a href="https://twitter.com/udekatie">
+			<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+		</a>
+		<a href="https://www.pinterest.com/kicesk8er/">
+			<img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest.png" width="35" height="35" />
+		</a>
+		<a href="https://www.facebook.com/katie.ude">
+			<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+		</a>
+		<a href="https://www.linkedin.com/in/katherineude">
+			<img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35" height="35" />
+		</a>
+		<a href="https://instagram.com/ktud14/">
+			<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+		</a>
+	</div>
+</body>
