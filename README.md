@@ -16,8 +16,9 @@ Favorite beverages:
 If you love checking out new restaurants in Chicago, you should sneak a peak at my friend's food blog: [Visit Chicago Food Girl!](http://www.chicagofoodgirl.com/)
 
 ```
-function smile(big) {
-  if (big) {
+function smile(x) {
+  if (x > 10) {
     console.log("I hope you have enjoyed reading!");
   }
 }
+smile(20);
