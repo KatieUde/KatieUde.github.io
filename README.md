@@ -14,3 +14,10 @@ Favorite beverages:
 * rose or white wine
 
 If you love checking out new restaurants in Chicago, you should sneak a peak at my friend's food blog: [Visit Chicago Food Girl!](http://www.chicagofoodgirl.com/)
+
+```
+function smile(big) {
+  if (big) {
+    console.log("I hope you have enjoyed reading!");
+  }
+}
