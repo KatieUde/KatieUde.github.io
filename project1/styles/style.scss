@@ -10,6 +10,10 @@ body {
   width: $wrapper-width;
   height: 600px;
   position: relative;
+  background-image: url(http://imgur.com/rgBCXTH);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #welcome {
@@ -49,4 +53,13 @@ p {
   margin-top: 50px;
   margin-right: 8%;
   margin-left: 8%;
+}
+input {
+  border: 5;
+  padding: 5px;
+  font-size: 14px;
+}
+input[type="submit"] {
+  background: red;
+  color: #A9A;
 }
