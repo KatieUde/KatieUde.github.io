@@ -14,13 +14,6 @@ var shapes = [
           'heart',
           'clover'
         ];
-// var square = $('#wrapper div:eq(1)');
-// var circle = $('#wrapper div:eq(2)');
-// var diamond = $('#wrapper div:eq(3)');
-// var fleur = $('#wrapper div:eq(4)');
-// var heart = $('#wrapper div:eq(5)');
-// var clover = $('#wrapper div:eq(6)');
-
 
 function gameStart(){
   // fade's in door
@@ -85,30 +78,57 @@ function buildDoor(){
   clickShapes();
 } //end buildDoor function
 
+// function playDoor(player1, player2) {
+//
+// }
+//
+
+
 function clickShapes() {
-$("#square").on("click", function(){
+var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
+var clickOrder = [];
+
+$("#square").click("click.sq", function clickFirst(){
   $(this).css('background', 'rgb(47, 75, 224)');
-  $("#square.background").fadeOut("slow");
   console.log('this square click works!!!');
+  clickOrder.push('square');
 });
-$("#circle").on("click", function(){
-  $(this).css('background', 'rgb(47, 75, 224)');
-  console.log('this cicle click works!!!');
+$("#heart").click("click.", function clickSecond(){
+$(this).css('background', 'rgb(47, 75, 224)');
+console.log('this heart click works!!!');
+  clickOrder.push('heart');
 });
-$("#diamond").on("click", function(){
+$("#circle").click("click.go3", function clickThird(){
   $(this).css('background', 'rgb(47, 75, 224)');
-  console.log('this diamond click works!!!');
-  });
-$("#fleur").on("click", function(){
-  $(this).css('background', 'rgb(47, 75, 224)');
-      console.log('this fleur click works!!!');
-  });
-$("#heart").on("click", function(){
-  $(this).css('background', 'rgb(47, 75, 224)');
-    console.log('this heart click works!!!');
-  });
-$("#clover").on("click", function(){
+  console.log('this circle click works!!!');
+  clickOrder.push('circle');
+});
+$("#clover").click("click", function clickFourth(){
   $(this).css('background', 'rgb(47, 75, 224)');
     console.log('this clover click works!!!');
+    clickOrder.push('clover');
   });
+$("#diamond").click("click.go5", function clickFifth(){
+  $(this).css('background', 'rgb(47, 75, 224)');
+  console.log('this diamond click works!!!');
+  clickOrder.push('diamond');
+  });
+$("#fleur").click("click.go6", function clickSixth(){
+  $(this).css('background', 'rgb(47, 75, 224)');
+  console.log('this fleur click works!!!');
+  clickOrder.push('fleur');
+  console.log(clickOrder);
+  console.log(correctOrder);
+    if (clickOrder.toString() === correctOrder.toString()) {
+      console.log('You can proceed to the next leve!!');
+    }
+    // else {
+    //   $("#square").html('');
+    //   $("#heart").html('');
+    //   $("#circle").html('');
+    //   $("#clover").html('');
+    //   $("#diamond").html('');
+    //   $("#fleur").html('');
+    // }
+})
 } //end of clickShapes function
