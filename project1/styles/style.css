@@ -5,7 +5,6 @@ body {
   width: 90%;
   height: 600px;
   position: relative;
-  background-image: url(http://imgur.com/rgBCXTH);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
@@ -54,5 +53,47 @@ input {
 input[type="submit"] {
   background: red;
   color: #A9A; }
+
+#square {
+  background: url(http://i.imgur.com/8KsHIg2.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
+
+#circle {
+  background: url(http://i.imgur.com/3D7Zqte.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
+
+#diamond {
+  background: url(http://i.imgur.com/U2S5Gdp.gif) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
+
+#heart {
+  background: url(http://i.imgur.com/kwaVJU6.png) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
+
+#clover {
+  background: url(http://i.imgur.com/Qsj5Gch.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
+
+#fleur {
+  background: url(http://i.imgur.com/V1XXKzE.png) no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  height: 1em;
+  width: 1em; }
 
 /*# sourceMappingURL=style.css.map */
