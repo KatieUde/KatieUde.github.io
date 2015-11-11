@@ -14,6 +14,7 @@ var shapes = [
           'heart',
           'clover'
         ];
+var win;
 
 function gameStart(){
   // fade's in door
@@ -75,14 +76,28 @@ function buildDoor(){
     heart.attr('id', 'heart');
     var clover = $('#wrapper div:eq(6)');
     clover.attr('id', 'clover');
-  clickShapes();
+  tryPlayer1();
 } //end buildDoor function
 
-// function playDoor(player1, player2) {
-//
-// }
-//
+// var player1Pick = tryPlayer1();
+// var player2Pick = tryPlayer2();
+// var Complete = function playDoor(player1Pick, player2Pick)
 
+function tryPlayer1() {
+  alert(player1 + ' please try to select the shapes in the correct order. Doing so will unlock the door to the next level (Hint: The fleur-de-lis is the last shape you will need to press)!');
+  clickShapes();
+}
+
+function tryPlayer2() {
+  alert(player2 + ' please take your turn and try as well.');
+  clickShapes();
+}
+//
+// function playDoor(player1Pick, player2Pick) {
+// if (player1Score == player2Score) {
+//   console.log('we can go to the next level!');
+//   }
+// }
 
 function clickShapes() {
 var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
@@ -119,16 +134,20 @@ $("#fleur").click("click.go6", function clickSixth(){
   clickOrder.push('fleur');
   console.log(clickOrder);
   console.log(correctOrder);
-    if (clickOrder.toString() === correctOrder.toString()) {
-      console.log('You can proceed to the next leve!!');
+    if (Arrays.asList(clickOrder).containsAll(Arrays.asList(correctOrder))) {
+      console.log('You can proceed to the next level!!');
+      var win = 6;
     }
-    // else {
-    //   $("#square").html('');
-    //   $("#heart").html('');
-    //   $("#circle").html('');
-    //   $("#clover").html('');
-    //   $("#diamond").html('');
-    //   $("#fleur").html('');
-    // }
-})
+    else {
+      alert('Sorry, please try again!')
+      $('#wrapper div:eq(1)').removeAttr('style');
+      $('#wrapper div:eq(2)').removeAttr('style');
+      $('#wrapper div:eq(3)').removeAttr('style');
+      $('#wrapper div:eq(4)').removeAttr('style');
+      $('#wrapper div:eq(5)').removeAttr('style');
+      $('#wrapper div:eq(6)').removeAttr('style');
+      console.log(correctOrder);
+    }
+  })
 } //end of clickShapes function
+    // if (clickOrder.toString() == correctOrder.toString())
