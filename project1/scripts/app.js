@@ -19,6 +19,8 @@ var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
 var clickOrder = [];
 var currentPlayer = 1;
 
+var hiddenImages = ['chalice', 'jester', 'shield', 'dragon', 'sword', 'key', 'chair', 'fork', 'books', 'feather', 'crystal', 'cauldron', 'wand', 'star'];
+
 function gameStart(){
   // fade's in door
   // prompts user to enter player one name
@@ -108,32 +110,32 @@ $("#fleur").unbind('click');
 
 
 $("#square").click("click.sq", function clickFirst(){
-  $(this).css('background', 'rgb(47, 75, 224)');
+  $(this).css('background-image', 'url(http://i.imgur.com/gqPquSsm.png)');
   console.log('this square click works!!!');
   clickOrder.push('square');
 });
 $("#heart").click("click.", function clickSecond(){
-$(this).css('background', 'rgb(47, 75, 224)');
+$(this).css('background-image', 'url(http://i.imgur.com/HG7uhKH.png)');
 console.log('this heart click works!!!');
   clickOrder.push('heart');
 });
 $("#circle").click("click.go3", function clickThird(){
-  $(this).css('background', 'rgb(47, 75, 224)');
+  $(this).css('background-image', 'url(http://i.imgur.com/VFptiDJ.png)');
   console.log('this circle click works!!!');
   clickOrder.push('circle');
 });
 $("#clover").click("click", function clickFourth(){
-  $(this).css('background', 'rgb(47, 75, 224)');
+  $(this).css('background-image', 'url(http://i.imgur.com/1jgIeRI.png)');
     console.log('this clover click works!!!');
     clickOrder.push('clover');
   });
 $("#diamond").click("click.go5", function clickFifth(){
-  $(this).css('background', 'rgb(47, 75, 224)');
+  $(this).css('background-image', 'url(http://i.imgur.com/Iru7WpL.png)');
   console.log('this diamond click works!!!');
   clickOrder.push('diamond');
   });
 $("#fleur").click("click.go6", function clickSixth(){
-  $(this).css('background', 'rgb(47, 75, 224)');
+  $(this).css('background', 'url(http://i.imgur.com/9Dcg0NX.png)');
   console.log('this fleur click works!!!');
   clickOrder.push('fleur');
   console.log(clickOrder);
@@ -151,7 +153,7 @@ $("#fleur").click("click.go6", function clickSixth(){
         tryPlayer2();
       } else if (currentPlayer == 2) {
         // show winning stuff
-        alert('game over!!!!@121');
+        alert('Game Over!!!!!');
         changeBackground();
       }
 
@@ -193,4 +195,43 @@ function changeBackground() {
   $('#fleur').detach();
   $('#wrapper').css('background-image', '');
   $('#wrapper').css('background-image', 'url(http://i.imgur.com/GH6pbWD.jpg)');
+  loadHiddenObjects();
+}
+
+function loadHiddenObjects() {
+  for(var i = 0; i < hiddenImages.length; i++) {
+    console.log('my loop is working');
+    var hiddenObjects = "<div></div>";
+    $('#wrapper').append(hiddenObjects);
+  }
+  var chalice = $('#wrapper div:eq(1)');
+  chalice.attr('id', 'hidden_chalice');
+  var jester = $('#wrapper div:eq(2)');
+  jester.attr('id', 'hidden_jester');
+  var shield = $('#wrapper div:eq(3)');
+  shield.attr('id', 'hidden_shield');
+  var dragon = $('#wrapper div:eq(4)');
+  dragon.attr('id', 'hidden_dragon');
+  var sword = $('#wrapper div:eq(5)');
+  sword.attr('id', 'hidden_sword');
+  var key = $('#wrapper div:eq(6)');
+  key.attr('id', 'hidden_key');
+  var chair = $('#wrapper div:eq(7)');
+  chair.attr('id', 'hidden_chair');
+  var fork = $('#wrapper div:eq(8)');
+  fork.attr('id', 'hidden_fork');
+  var books = $('#wrapper div:eq(9)');
+  books.attr('id', 'hidden_books');
+  var feather = $('#wrapper div:eq(10)');
+  feather.attr('id', 'hidden_feather');
+  var feather = $('#wrapper div:eq(10)');
+  feather.attr('id', 'hidden_feather');
+  var crystal = $('#wrapper div:eq(11)');
+  crystal.attr('id', 'hidden_crystal');
+  var cauldron = $('#wrapper div:eq(12)');
+  cauldron.attr('id', 'hidden_cauldron');
+  var wand = $('#wrapper div:eq(13)');
+  wand.attr('id', 'hidden_wand');
+  var star = $('#wrapper div:eq(14)');
+  star.attr('id', 'hidden_star');
 }
