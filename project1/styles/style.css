@@ -53,9 +53,7 @@ footer {
   background: rgba(204, 130, 55, 0.92);
   border-radius: 20px;
   position: relative;
-  font-family: "MedievalSharp", cursive;
-  text-indent: 20px;
-  font-size: 36px bold; }
+  font-family: "MedievalSharp", cursive; }
 
 .items {
   display: inline-block; }

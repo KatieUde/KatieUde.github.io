@@ -109,17 +109,17 @@ $("#clover").unbind('click');
 $("#fleur").unbind('click');
 
 
-$("#square").click("click.sq", function clickFirst(){
+$("#square").click("click", function clickFirst(){
   $(this).css('background-image', 'url(http://i.imgur.com/gqPquSsm.png)');
   console.log('this square click works!!!');
   clickOrder.push('square');
 });
-$("#heart").click("click.", function clickSecond(){
+$("#heart").click("click", function clickSecond(){
 $(this).css('background-image', 'url(http://i.imgur.com/HG7uhKH.png)');
 console.log('this heart click works!!!');
   clickOrder.push('heart');
 });
-$("#circle").click("click.go3", function clickThird(){
+$("#circle").click("click", function clickThird(){
   $(this).css('background-image', 'url(http://i.imgur.com/VFptiDJ.png)');
   console.log('this circle click works!!!');
   clickOrder.push('circle');
@@ -129,12 +129,12 @@ $("#clover").click("click", function clickFourth(){
     console.log('this clover click works!!!');
     clickOrder.push('clover');
   });
-$("#diamond").click("click.go5", function clickFifth(){
+$("#diamond").click("click", function clickFifth(){
   $(this).css('background-image', 'url(http://i.imgur.com/Iru7WpL.png)');
   console.log('this diamond click works!!!');
   clickOrder.push('diamond');
   });
-$("#fleur").click("click.go6", function clickSixth(){
+$("#fleur").click("click.", function clickSixth(){
   $(this).css('background', 'url(http://i.imgur.com/9Dcg0NX.png)');
   console.log('this fleur click works!!!');
   clickOrder.push('fleur');
@@ -234,7 +234,7 @@ function loadHiddenObjects() {
 }
 
 function beginHidden() {
-  var inventory = "<footer>Items to Find:</footer>";
+  var inventory = "<footer><b>Items to Find:</b></footer>";
   $('#wrapper').append(inventory);
   var findImages = ['dragon', 'key', 'wand', 'feather', 'books', 'crystal', 'swords'];
 
@@ -245,4 +245,36 @@ function beginHidden() {
     var inventoryList = "<ul class='items'>" + findImages[i] + "</ul>";
     $('footer').append(inventoryList);
   }
+  findHidden();
+}
+
+function findHidden() {
+  $("#hidden_dragon").click("click.", function clickDragon(){
+    $(this).detach();
+    $('footer .items:eq(0)').css("text-decoration", "line-through");
+  })
+  $("#hidden_key").click("click.", function clickKey(){
+    $(this).detach();
+    $('footer .items:eq(1)').css("text-decoration", "line-through");
+  })
+  $("#hidden_wand").click("click.", function clickWand(){
+    $(this).detach();
+    $('footer .items:eq(2)').css("text-decoration", "line-through");
+  })
+  $("#hidden_feather").click("click.", function clickFeather(){
+    $(this).detach();
+    $('footer .items:eq(3)').css("text-decoration", "line-through");
+  })
+  $("#hidden_books").click("click.", function clickBooks(){
+    $(this).detach();
+    $('footer .items:eq(4)').css("text-decoration", "line-through");
+  })
+  $("#hidden_crystal").click("click.", function clickCrystal(){
+    $(this).detach();
+    $('footer .items:eq(5)').css("text-decoration", "line-through");
+  })
+  $("#hidden_sword").click("click.", function clickSword(){
+    $(this).detach();
+    $('footer .items:eq(6)').css("text-decoration", "line-through");
+  })
 }
