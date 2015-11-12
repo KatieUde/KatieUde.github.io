@@ -17,6 +17,7 @@ var shapes = [
 var win;
 var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
 var clickOrder = [];
+var currentPlayer = 1;
 
 function gameStart(){
   // fade's in door
@@ -98,6 +99,14 @@ function tryPlayer1() {
 
 function clickShapes() {
 
+$('#square').unbind('click');
+$('#heart').unbind('click');
+$('#circle').unbind('click');
+$('#diamond').unbind('click');
+$("#clover").unbind('click');
+$("#fleur").unbind('click');
+
+
 $("#square").click("click.sq", function clickFirst(){
   $(this).css('background', 'rgb(47, 75, 224)');
   console.log('this square click works!!!');
@@ -135,8 +144,22 @@ $("#fleur").click("click.go6", function clickSixth(){
     if (clickOrder.toString() == correctOrder.toString()) {
       console.log('You can proceed to the next level!!');
       for (var i = 0; i < 6; i++) {
-      clickOrder.pop();
-    }
+        clickOrder.pop();
+      }
+      if (currentPlayer == 1) {
+        currentPlayer = 2;
+        tryPlayer2();
+      } else if (currentPlayer == 2) {
+        // show winning stuff
+        alert('game over!!!!@121');
+      }
+
+      $('#wrapper div:eq(1)').removeAttr('style');
+      $('#wrapper div:eq(2)').removeAttr('style');
+      $('#wrapper div:eq(3)').removeAttr('style');
+      $('#wrapper div:eq(4)').removeAttr('style');
+      $('#wrapper div:eq(5)').removeAttr('style');
+      $('#wrapper div:eq(6)').removeAttr('style');
   }
     else {
       alert('Sorry, please try again!')
@@ -151,7 +174,6 @@ $("#fleur").click("click.go6", function clickSixth(){
       clickOrder.pop();
       }
     }
-    tryPlayer2();
   }
 } //end of clickShapes function
 
@@ -159,4 +181,15 @@ function tryPlayer2() {
   console.log(correctOrder);
   alert(player2 + ', please take your turn now and try as well.');
   clickShapes();
+}
+
+function changeBackground() {
+  $('#square').detach();
+  $('#heart').detach();
+  $('#circle').detach();
+  $('#clover').detach();
+  $('#diamond').detach();
+  $('#fleur').detach();
+  $('#wrapper').detach('background-image');
+  $('$wrapper').append('background-image', 'http://i.imgur.com/GH6pbWD.jpg')
 }
