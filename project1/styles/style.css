@@ -58,10 +58,9 @@ input[type="submit"] {
   margin-top: 80px;
   margin-left: 32%;
   margin-right: 20px;
-  background: url(http://i.imgur.com/8KsHIg2.jpg) no-repeat;
+  background: url(http://i.imgur.com/UJ44Ovy.png) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left;
@@ -69,10 +68,9 @@ input[type="submit"] {
 
 #circle {
   margin-right: 40px;
-  background: url(http://i.imgur.com/3D7Zqte.jpg) no-repeat;
+  background: url(http://i.imgur.com/ywp61A3.png) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left;
@@ -81,20 +79,18 @@ input[type="submit"] {
 #diamond {
   margin-bottom: 60px;
   margin-right: 20px;
-  background: url(http://i.imgur.com/U2S5Gdp.gif) no-repeat;
+  background: url(http://i.imgur.com/DkmNkrU.gif) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left; }
 
 #heart {
   margin-right: 20px;
-  background: url(http://i.imgur.com/kwaVJU6.png) no-repeat;
+  background: url(http://i.imgur.com/7uFFUgJ.png) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left; }
@@ -102,20 +98,18 @@ input[type="submit"] {
 #clover {
   margin-top: 80px;
   margin-right: 20px;
-  background: url(http://i.imgur.com/Qsj5Gch.jpg) no-repeat;
+  background: url(http://i.imgur.com/UmXMO9T.png) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left; }
 
 #fleur {
   margin-right: 20px;
-  background: url(http://i.imgur.com/V1XXKzE.png) no-repeat;
+  background: url(http://i.imgur.com/jmGoora.png) no-repeat;
   background-size: contain;
   display: inline-block;
-  opacity: 0.4;
   height: 3em;
   width: 3em;
   float: left; }
