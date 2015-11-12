@@ -122,67 +122,81 @@ input[type="submit"] {
   width: 3em; }
 
 #hidden_jester {
-  background: url(http://i.imgur.com/jGX1vAzm.png) no-repeat;
+  background: url(http://i.imgur.com/2qX5Aoq.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  left: 38em;
+  bottom: 12em;
+  opacity: 0.7; }
 
 #hidden_shield {
-  background: url(http://i.imgur.com/LDHZAbHm.png) no-repeat;
+  background: url(http://i.imgur.com/YfD6geK.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  right: 28em;
+  bottom: 19em; }
 
 #hidden_dragon {
   background: url(http://i.imgur.com/tFjqPwy.png) no-repeat;
   background-size: contain;
   position: absolute;
-  height: 3em;
-  width: 3em; }
+  height: 4em;
+  width: 4em;
+  left: 21em;
+  bottom: 11em; }
 
 #hidden_sword {
-  background: url(http://i.imgur.com/RybxYD1b.png) no-repeat;
+  background: url(http://i.imgur.com/oermHDX.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  top: 2em;
+  left: 30em;
+  opacity: 0.6; }
 
 #hidden_key {
   background: url(http://i.imgur.com/bVL2JFu.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
-
-#hidden_chair {
-  background: url(http://i.imgur.com/EbRGAl9.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  height: 3em;
-  width: 3em; }
+  width: 3em;
+  right: 10em;
+  bottom: 1em;
+  opacity: 0.5; }
 
 #hidden_fork {
   background: url(http://i.imgur.com/2W1KcJz.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  left: 32em;
+  opacity: 0.7; }
 
 #hidden_books {
   background: url(http://i.imgur.com/afupBH5.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  right: 19em;
+  bottom: 11em;
+  opacity: 0.7; }
 
 #hidden_feather {
   background: url(http://i.imgur.com/IvPJl6E.png) no-repeat;
   background-size: contain;
   position: absolute;
   height: 3em;
-  width: 3em; }
+  width: 3em;
+  left: 6em;
+  bottom: 7em;
+  opacity: 0.5; }
 
 #hidden_crystal {
   background: url(http://i.imgur.com/nlF7snYs.jpg) no-repeat;
@@ -199,8 +213,12 @@ input[type="submit"] {
   background: url(http://i.imgur.com/LwphDw5b.jpg) no-repeat;
   background-size: contain;
   position: absolute;
-  height: 3em;
-  width: 3em; }
+  height: 4em;
+  width: 4em;
+  opacity: 0.7;
+  left: 28em;
+  bottom: 11em;
+  border-radius: 10px; }
 
 #hidden_wand {
   background: url(http://i.imgur.com/PY7Jcaa.png) no-repeat;

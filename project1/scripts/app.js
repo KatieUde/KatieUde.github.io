@@ -19,7 +19,7 @@ var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
 var clickOrder = [];
 var currentPlayer = 1;
 
-var hiddenImages = ['chalice', 'jester', 'shield', 'dragon', 'sword', 'key', 'chair', 'fork', 'books', 'feather', 'crystal', 'cauldron', 'wand', 'star'];
+var hiddenImages = ['chalice', 'jester', 'shield', 'dragon', 'sword', 'key', 'fork', 'books', 'feather', 'crystal', 'cauldron', 'wand', 'star'];
 
 function gameStart(){
   // fade's in door
@@ -52,13 +52,13 @@ function createPlayer() {
   var userInput = prompt('Please enter the name for Player One.');
     if (userInput != undefined) {
       player1 = userInput;
-      alert('Thank you ' + player1);
+      alert('Thank you ' + player1 + '.');
     }
 
     var userInput2 = prompt('Please enter the name for Player Two.');
     if (userInput2 != undefined) {
       player2 = userInput2;
-      alert('Thank you ' + player2);
+      alert('Thank you ' + player2 + '.');
     }
     buildDoor();
 } //createPlayer end of function
@@ -216,22 +216,18 @@ function loadHiddenObjects() {
   sword.attr('id', 'hidden_sword');
   var key = $('#wrapper div:eq(6)');
   key.attr('id', 'hidden_key');
-  var chair = $('#wrapper div:eq(7)');
-  chair.attr('id', 'hidden_chair');
-  var fork = $('#wrapper div:eq(8)');
+  var fork = $('#wrapper div:eq(7)');
   fork.attr('id', 'hidden_fork');
-  var books = $('#wrapper div:eq(9)');
+  var books = $('#wrapper div:eq(8)');
   books.attr('id', 'hidden_books');
-  var feather = $('#wrapper div:eq(10)');
+  var feather = $('#wrapper div:eq(9)');
   feather.attr('id', 'hidden_feather');
-  var feather = $('#wrapper div:eq(10)');
-  feather.attr('id', 'hidden_feather');
-  var crystal = $('#wrapper div:eq(11)');
+  var crystal = $('#wrapper div:eq(10)');
   crystal.attr('id', 'hidden_crystal');
-  var cauldron = $('#wrapper div:eq(12)');
+  var cauldron = $('#wrapper div:eq(11)');
   cauldron.attr('id', 'hidden_cauldron');
-  var wand = $('#wrapper div:eq(13)');
+  var wand = $('#wrapper div:eq(12)');
   wand.attr('id', 'hidden_wand');
-  var star = $('#wrapper div:eq(14)');
+  var star = $('#wrapper div:eq(13)');
   star.attr('id', 'hidden_star');
 }
