@@ -152,6 +152,7 @@ $("#fleur").click("click.go6", function clickSixth(){
       } else if (currentPlayer == 2) {
         // show winning stuff
         alert('game over!!!!@121');
+        changeBackground();
       }
 
       $('#wrapper div:eq(1)').removeAttr('style');
@@ -190,6 +191,6 @@ function changeBackground() {
   $('#clover').detach();
   $('#diamond').detach();
   $('#fleur').detach();
-  $('#wrapper').detach('background-image');
-  $('$wrapper').append('background-image', 'http://i.imgur.com/GH6pbWD.jpg')
+  $('#wrapper').css('background-image', '');
+  $('#wrapper').css('background-image', 'url(http://i.imgur.com/GH6pbWD.jpg)');
 }
