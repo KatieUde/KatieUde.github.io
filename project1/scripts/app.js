@@ -134,7 +134,7 @@ $("#diamond").click("click", function clickFifth(){
   console.log('this diamond click works!!!');
   clickOrder.push('diamond');
   });
-$("#fleur").click("click.", function clickSixth(){
+$("#fleur").click("click", function clickSixth(){
   $(this).css('background', 'url(http://i.imgur.com/9Dcg0NX.png)');
   console.log('this fleur click works!!!');
   clickOrder.push('fleur');
@@ -249,32 +249,42 @@ function beginHidden() {
 }
 
 function findHidden() {
-  $("#hidden_dragon").click("click.", function clickDragon(){
+  var captureItems = [];
+
+  $("#hidden_dragon").click("click", function clickDragon(){
     $(this).detach();
     $('footer .items:eq(0)').css("text-decoration", "line-through");
-  })
-  $("#hidden_key").click("click.", function clickKey(){
+      captureItems.push('dragon');
+  });
+  $("#hidden_key").click("click", function clickKey(){
     $(this).detach();
     $('footer .items:eq(1)').css("text-decoration", "line-through");
-  })
-  $("#hidden_wand").click("click.", function clickWand(){
+      captureItems.push('key');
+  });
+  $("#hidden_wand").click("click", function clickWand(){
     $(this).detach();
     $('footer .items:eq(2)').css("text-decoration", "line-through");
-  })
-  $("#hidden_feather").click("click.", function clickFeather(){
+      captureItems.push('wand');
+  });
+  $("#hidden_feather").click("click", function clickFeather(){
     $(this).detach();
     $('footer .items:eq(3)').css("text-decoration", "line-through");
-  })
-  $("#hidden_books").click("click.", function clickBooks(){
+      captureItems.push('feather');
+  });
+  $("#hidden_books").click("click", function clickBooks(){
     $(this).detach();
     $('footer .items:eq(4)').css("text-decoration", "line-through");
-  })
-  $("#hidden_crystal").click("click.", function clickCrystal(){
+      captureItems.push('books');
+  });
+  $("#hidden_crystal").click("click", function clickCrystal(){
     $(this).detach();
     $('footer .items:eq(5)').css("text-decoration", "line-through");
-  })
-  $("#hidden_sword").click("click.", function clickSword(){
+      captureItems.push('crystal');
+  });
+  $("#hidden_sword").click("click", function clickSword(){
     $(this).detach();
     $('footer .items:eq(6)').css("text-decoration", "line-through");
-  })
+      captureItems.push('sword');
+      console.log(captureItems);
+  });
 }
