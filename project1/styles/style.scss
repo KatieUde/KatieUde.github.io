@@ -54,15 +54,25 @@ p {
   margin-right: 8%;
   margin-left: 8%;
 }
-input {
-  border: 5;
-  padding: 5px;
-  font-size: 14px;
+
+footer {
+  width: 40%;
+  height: 120px;
+  margin-top: 22em;
+  margin-left: 20%;
+  background: rgba(204, 130, 55, 0.92);
+  border-radius: 20px;
+  position: relative;
+  font-family: $intro_font;
+  text-indent: 20px;
+  font-size: 36px bold;
 }
-input[type="submit"] {
-  background: red;
-  color: #A9A;
+
+.items {
+  display: inline-block;
+
 }
+
 #square {
   margin-top: 80px;
   margin-left: 32%;
@@ -129,6 +139,9 @@ input[type="submit"] {
   position: absolute;
   height: 3em;
   width: 3em;
+  right: 12em;
+  top: 19em;
+  z-index: +1;
 }
 #hidden_jester{
   background: url(http://i.imgur.com/2qX5Aoq.png) no-repeat;
@@ -148,6 +161,7 @@ input[type="submit"] {
   width: 3em;
   right: 28em;
   bottom: 19em;
+  z-index: 50;
 }
 #hidden_dragon{
   background: url(http://i.imgur.com/tFjqPwy.png) no-repeat;

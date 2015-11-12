@@ -199,7 +199,7 @@ function changeBackground() {
 }
 
 function loadHiddenObjects() {
-  for(var i = 0; i < hiddenImages.length; i++) {
+  for (var i = 0; i < hiddenImages.length; i++) {
     console.log('my loop is working');
     var hiddenObjects = "<div></div>";
     $('#wrapper').append(hiddenObjects);
@@ -230,4 +230,19 @@ function loadHiddenObjects() {
   wand.attr('id', 'hidden_wand');
   var star = $('#wrapper div:eq(13)');
   star.attr('id', 'hidden_star');
+  beginHidden();
+}
+
+function beginHidden() {
+  var inventory = "<footer>Items to Find:</footer>";
+  $('#wrapper').append(inventory);
+  var findImages = ['dragon', 'key', 'wand', 'feather', 'books', 'crystal', 'swords'];
+
+  alert('Congratulations on making it to the next level ' + player1 + ' & ' + player2 + '!');
+
+  for (var i = 0; i < findImages.length; i++) {
+    console.log('my loop is working');
+    var inventoryList = "<ul class='items'>" + findImages[i] + "</ul>";
+    $('footer').append(inventoryList);
+  }
 }
