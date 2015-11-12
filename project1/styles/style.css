@@ -55,7 +55,8 @@ input[type="submit"] {
   color: #A9A; }
 
 #square {
-  margin-left: 34%;
+  margin-top: 80px;
+  margin-left: 32%;
   margin-right: 20px;
   background: url(http://i.imgur.com/8KsHIg2.jpg) no-repeat;
   background-size: contain;
@@ -67,7 +68,7 @@ input[type="submit"] {
   text-align: center; }
 
 #circle {
-  margin-right: 20px;
+  margin-right: 40px;
   background: url(http://i.imgur.com/3D7Zqte.jpg) no-repeat;
   background-size: contain;
   display: inline-block;
@@ -78,6 +79,7 @@ input[type="submit"] {
   text-align: center; }
 
 #diamond {
+  margin-bottom: 60px;
   margin-right: 20px;
   background: url(http://i.imgur.com/U2S5Gdp.gif) no-repeat;
   background-size: contain;
@@ -98,6 +100,7 @@ input[type="submit"] {
   float: left; }
 
 #clover {
+  margin-top: 80px;
   margin-right: 20px;
   background: url(http://i.imgur.com/Qsj5Gch.jpg) no-repeat;
   background-size: contain;

@@ -15,6 +15,8 @@ var shapes = [
           'clover'
         ];
 var win;
+var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
+var clickOrder = [];
 
 function gameStart(){
   // fade's in door
@@ -46,13 +48,13 @@ function initWrapper(){
 function createPlayer() {
   var userInput = prompt('Please enter the name for Player One.');
     if (userInput != undefined) {
-      var player1 = userInput;
+      player1 = userInput;
       alert('Thank you ' + player1);
     }
 
     var userInput2 = prompt('Please enter the name for Player Two.');
     if (userInput2 != undefined) {
-      var player2 = userInput2;
+      player2 = userInput2;
       alert('Thank you ' + player2);
     }
     buildDoor();
@@ -84,12 +86,7 @@ function buildDoor(){
 // var Complete = function playDoor(player1Pick, player2Pick)
 
 function tryPlayer1() {
-  alert(player1 + ' please try to select the shapes in the correct order. Doing so will unlock the door to the next level (Hint: The fleur-de-lis is the last shape you will need to press)!');
-  clickShapes();
-}
-
-function tryPlayer2() {
-  alert(player2 + ' please take your turn and try as well.');
+  alert(player1 + ', please try to select the shapes in the correct order. Doing so will unlock the door to the next level (Hint: The fleur-de-lis is the last shape you will need to press)!');
   clickShapes();
 }
 //
@@ -100,8 +97,6 @@ function tryPlayer2() {
 // }
 
 function clickShapes() {
-var correctOrder = ['square', 'heart', 'circle', 'clover', 'diamond', 'fleur'];
-var clickOrder = [];
 
 $("#square").click("click.sq", function clickFirst(){
   $(this).css('background', 'rgb(47, 75, 224)');
@@ -134,10 +129,15 @@ $("#fleur").click("click.go6", function clickSixth(){
   clickOrder.push('fleur');
   console.log(clickOrder);
   console.log(correctOrder);
-    if (Arrays.asList(clickOrder).containsAll(Arrays.asList(correctOrder))) {
+  yesNo(clickOrder, correctOrder);
+  })
+  function yesNo(clickOrder, correctOrder) {
+    if (clickOrder.toString() == correctOrder.toString()) {
       console.log('You can proceed to the next level!!');
-      var win = 6;
+      for (var i = 0; i < 6; i++) {
+      clickOrder.pop();
     }
+  }
     else {
       alert('Sorry, please try again!')
       $('#wrapper div:eq(1)').removeAttr('style');
@@ -147,7 +147,16 @@ $("#fleur").click("click.go6", function clickSixth(){
       $('#wrapper div:eq(5)').removeAttr('style');
       $('#wrapper div:eq(6)').removeAttr('style');
       console.log(correctOrder);
+      for (var i = 0; i < 6; i++) {
+      clickOrder.pop();
+      }
     }
-  })
+    tryPlayer2();
+  }
 } //end of clickShapes function
-    // if (clickOrder.toString() == correctOrder.toString())
+
+function tryPlayer2() {
+  console.log(correctOrder);
+  alert(player2 + ', please take your turn now and try as well.');
+  clickShapes();
+}
