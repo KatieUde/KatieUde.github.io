@@ -62,7 +62,7 @@ footer {
 #square {
   margin-top: 80px;
   margin-left: 32%;
-  margin-right: 20px;
+  margin-right: 18px;
   background: url(http://i.imgur.com/UJ44Ovy.png) no-repeat;
   background-size: contain;
   display: inline-block;
@@ -84,6 +84,7 @@ footer {
 #diamond {
   margin-bottom: 60px;
   margin-right: 20px;
+  margin-top: -46px;
   background: url(http://i.imgur.com/DkmNkrU.gif) no-repeat;
   background-size: contain;
   display: inline-block;
@@ -92,7 +93,7 @@ footer {
   float: left; }
 
 #heart {
-  margin-right: 20px;
+  margin-right: 26px;
   background: url(http://i.imgur.com/7uFFUgJ.png) no-repeat;
   background-size: contain;
   display: inline-block;
@@ -102,7 +103,7 @@ footer {
 
 #clover {
   margin-top: 80px;
-  margin-right: 20px;
+  margin-right: 26px;
   background: url(http://i.imgur.com/UmXMO9T.png) no-repeat;
   background-size: contain;
   display: inline-block;
@@ -112,12 +113,16 @@ footer {
 
 #fleur {
   margin-right: 20px;
+  margin-top: -46px;
   background: url(http://i.imgur.com/jmGoora.png) no-repeat;
   background-size: contain;
   display: inline-block;
   height: 3em;
   width: 3em;
   float: left; }
+
+button:hover, #circle:hover, #square:hover, #heart:hover, #diamond:hover, #fleur:hover, #clover:hover {
+  cursor: pointer; }
 
 #hidden_chalice {
   background: url(http://i.imgur.com/5JnZu7A.png) no-repeat;
