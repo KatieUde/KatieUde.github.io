@@ -21,6 +21,8 @@ var currentPlayer = 1;
 
 var hiddenImages = ['chalice', 'jester', 'shield', 'dragon', 'sword', 'key', 'fork', 'books', 'feather', 'crystal', 'cauldron', 'wand', 'star'];
 
+var captureItems = 0;
+
 function gameStart(){
   // fade's in door
   // prompts user to enter player one name
@@ -32,21 +34,15 @@ function gameStart(){
       initWrapper();
     }); //start_button CLICK end of function
   });
-}
-      // $('#wrapper').fadeIn(400).delay(400);
-      // }) promise done end of function
-  //  buildDoor();
- // gameStart end of function
+} //gameStart end of functtion
 
 function initWrapper(){
   $('#wrapper').css('background-image', 'url(http://imgur.com/rgBCXTH.jpg)');
   $('#wrapper').css('display', 'none');
   $('#wrapper').fadeIn(1000, function(){
-    //console.log('end of fade in');
     createPlayer();
   });
-
-}
+} //end of initWrapper
 
 function createPlayer() {
   var userInput = prompt('Please enter the name for Player One.');
@@ -89,15 +85,10 @@ function buildDoor(){
 // var Complete = function playDoor(player1Pick, player2Pick)
 
 function tryPlayer1() {
-  alert(player1 + ', please try to select the shapes in the correct order. Doing so will unlock the door to the next level (Hint: The fleur-de-lis is the last shape you will need to press)!');
+  alert(player1 + ', please try to select the shapes in the correct order. Doing so will unlock the door to the next level (Hints: Each shape will be clicked one time and ONLY one time (no repeats). The fleur-de-lis is the last shape you will need to press)!');
   clickShapes();
-}
-//
-// function playDoor(player1Pick, player2Pick) {
-// if (player1Score == player2Score) {
-//   console.log('we can go to the next level!');
-//   }
-// }
+} // end of tryPlayer1 function
+
 
 function clickShapes() {
 
@@ -184,7 +175,7 @@ function tryPlayer2() {
   console.log(correctOrder);
   alert(player2 + ', please take your turn now and try as well.');
   clickShapes();
-}
+} //end of tryPlayer2 function
 
 function changeBackground() {
   $('#square').detach();
@@ -238,7 +229,7 @@ function beginHidden() {
   $('#wrapper').append(inventory);
   var findImages = ['dragon', 'key', 'wand', 'feather', 'books', 'crystal', 'swords'];
 
-  alert('Congratulations on making it to the next level ' + player1 + ' & ' + player2 + '!');
+  alert('Congratulations on making it to the next level ' + player1 + ' & ' + player2 + '! Please find all the hidden objects listed in the key at the bottom of the page. The swords will need to be the last item "found"');
 
   for (var i = 0; i < findImages.length; i++) {
     console.log('my loop is working');
@@ -249,42 +240,51 @@ function beginHidden() {
 }
 
 function findHidden() {
-  var captureItems = [];
 
   $("#hidden_dragon").click("click", function clickDragon(){
+    console.log('click 1');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(0)').css("text-decoration", "line-through");
-      captureItems.push('dragon');
   });
   $("#hidden_key").click("click", function clickKey(){
+    console.log('click 2');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(1)').css("text-decoration", "line-through");
-      captureItems.push('key');
   });
   $("#hidden_wand").click("click", function clickWand(){
+    console.log('click 3');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(2)').css("text-decoration", "line-through");
-      captureItems.push('wand');
   });
   $("#hidden_feather").click("click", function clickFeather(){
+    console.log('click 4');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(3)').css("text-decoration", "line-through");
-      captureItems.push('feather');
   });
   $("#hidden_books").click("click", function clickBooks(){
+    console.log('click 5');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(4)').css("text-decoration", "line-through");
-      captureItems.push('books');
   });
   $("#hidden_crystal").click("click", function clickCrystal(){
+    console.log('click 6');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(5)').css("text-decoration", "line-through");
-      captureItems.push('crystal');
   });
   $("#hidden_sword").click("click", function clickSword(){
+    console.log('click 7');
+    captureItems = captureItems + 1;
     $(this).detach();
     $('footer .items:eq(6)').css("text-decoration", "line-through");
-      captureItems.push('sword');
       console.log(captureItems);
+      if (captureItems == 7) {
+        alert('You have found all the objects!!! Your attention to detail is spot on! LA FIN.');
+      };
   });
-}
+} // end of findHidden function;
