@@ -19,4 +19,4 @@ While building this out I did run into a few roadblocks and left some items unre
 
 ### Sources
 * The image for the castle door was found on http://abctoppictures.net/ by performing a google search.
-* The image for the interior of the castle was found on leqi.co policy by performing a google search as well. The copyright on the site stated that images displayed may be used for Free or educational purposes.
+* The image for the interior of the castle was found on http://leqi.coby performing a google search as well. The copyright on the site stated that images displayed may be used for Free or educational purposes.
